@@ -1,0 +1,30 @@
+---
+layout: default
+---
+<div id="article-nav">
+	<a href="#prev">&larr;</a>
+	<a href="#next">&rarr;</a>
+</div>
+<article>
+	<header>
+		<div class="container">
+			<h1>{{ page.title }}</h1>
+			<p>{{ page.synopsis }}</p>
+		</div>
+	</header>
+	<div class="container">
+		<ul class="article-date">
+			<li>{{ page.date | date: "%B %d, %Y" }}</li>
+			<li><a href="/">&larr; Back to Front</a></li>
+		</ul>
+	</div>
+	<section>
+		{{ content }}
+	</section>
+	<footer>
+		<ul class="article-date">
+			<li>{{ page.date | date: "%B %d, %Y" }}</li>
+			<li><a href="#top">&uarr; Back to Top</a></li>
+		</ul>
+	</footer>
+</article>

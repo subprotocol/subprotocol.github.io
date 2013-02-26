@@ -1,0 +1,414 @@
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* fonts */
+#header, article header, #article-nav a, .article-date, #footer {
+	font-family: "Titillium Web", sans-serif;
+	font-weight: 400;
+}
+
+article section {
+	font-family: "Libre Baskerville", sans-serif;
+	font-weight: 400;
+	color: #323233;
+	font-size: 14pt;
+	line-height: 1.6em;
+}
+
+
+body {
+	background: #e4e8ee; /* Old browsers */
+	background: -moz-linear-gradient(left,  #e4e8ee 0%, #ffffff 20%, #ffffff 80%, #e4e8ee 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#e4e8ee), color-stop(20%,#ffffff), color-stop(80%,#ffffff), color-stop(100%,#e4e8ee)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(left,  #e4e8ee 0%,#ffffff 20%,#ffffff 80%,#e4e8ee 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left,  #e4e8ee 0%,#ffffff 20%,#ffffff 80%,#e4e8ee 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left,  #e4e8ee 0%,#ffffff 20%,#ffffff 80%,#e4e8ee 100%); /* IE10+ */
+	background: linear-gradient(to right,  #e4e8ee 0%,#ffffff 20%,#ffffff 80%,#e4e8ee 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e4e8ee', endColorstr='#e4e8ee',GradientType=1 ); /* IE6-9 */
+}
+
+
+
+#article-nav a {
+	position: absolute;
+	display: block;
+	text-decoration: none;
+	font-size: 15pt;
+	color: #999;
+
+	
+	border-radius: 50%;
+	background: rgba(41,45,48,0.2);
+	padding: 15px;
+	
+	top: 150px;
+	
+	width: 20px;
+	height: 20px;
+	
+}
+
+#article-nav a:hover {
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
+	box-shadow:
+		inset 0px -2px 0px 0px rgba(0,0,0,0.1)
+		, 0px 2px 4px 0px rgba(0,0,0,0.2)
+		;
+	background: rgba(38,174,144,1);
+	color: #fff;
+}
+
+#article-nav a:first-child {
+	left: 20px;
+}
+
+#article-nav a:last-child {
+	right: 20px;
+}
+
+
+article {
+	overflow: hidden;
+}
+
+
+.container {
+	width: 640px;
+	margin: 0px auto 0px auto;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+#header {
+	background: #292d30;
+	color: #82888d;
+	font-size: 10pt;
+	padding: 24px 0px;
+	
+	box-shadow: inset 0px -5px 20px 0px rgba(0,0,0,0.4);
+	
+}
+
+#header a {
+	text-decoration: none;
+	color: #fff;
+}
+
+#header .logo {
+	font-size: 12pt;
+	font-weight: 700;
+	width: 80px;
+	height: 27px;
+	padding-left: 2px;
+	border-left: 4px solid #26ae90;
+	
+	display: block;
+	text-transform: uppercase;
+	-webkit-transition: border-color 0.5s;
+	line-height: 0.9em;
+}
+
+#header .logo:hover {
+	border-color: #fff;
+}
+
+#header p {
+	position: absolute;
+	width: 240px;
+	margin: -26px 0px 0px 100px;
+}
+
+
+
+
+
+article header {
+	display: block;
+	background: #5b6069;
+	padding: 40px 0px;
+	
+	box-shadow:
+		inset 0px 1px 0px 0px rgba(255,255,255,0.1)
+		, inset 0px -1px 0px 0px rgba(0,0,0,0.1)
+		, inset 0px -15px 100px 0px rgba(0,0,0,0.3)
+		, 0px 1px 0px 0px rgba(255,255,255,0.2)
+		, 0px 5px 10px 0px rgba(157,174,191,0.5)
+	;
+	
+}
+
+article header h1 {
+	color: #fff;
+	font-size: 30pt;
+	margin-bottom: 16px;
+	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+article header p {
+	color: #a5aab2;
+	font-size: 20pt;
+	font-weight: 200;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	line-height: 1.4em;
+}
+
+.article-date {
+	font-weight: 700;
+	text-transform: uppercase;
+	border-bottom: 1px solid #dcddde;
+	color: #26ae90;
+	padding-bottom: 15px;
+	margin: 30px 0px 30px 0px;
+}
+
+footer .article-date {
+	border-top: 1px solid #dcddde;
+	border-bottom: none;
+	padding: 15px 0px 0px 0px;
+}
+
+.article-date li:first-child {
+	position: absolute;
+}
+
+.article-date li:last-child {
+	text-align: right;
+}
+
+.article-date a {
+	color: #919191;
+	text-decoration: none;
+}
+
+.article-date a:hover {
+	color: #000;
+}
+
+
+article section {
+	display: block;
+	min-height: 400px;
+	color: #5a5c5e;
+	width: 640px;
+	margin: 0px auto 0px auto;
+}
+
+article section a {
+	color: #26ae90;
+}
+
+article section a:hover {
+	color: #0b6b6a;
+}
+
+article section p {
+	margin: 1.6em 0;
+}
+
+
+article section h1:before, article section h2:before {
+	content: "";
+	width: 6px;
+	height: 6px;
+	background: rgba(0,0,0,0.1);
+	position: absolute;
+	margin-left: 634px;
+}
+
+article section h1, article section h2 {
+	font-weight: 700;
+	color: #000;
+	margin-top: 50px;
+}
+
+article section h1 {
+	font-size: 30pt;
+}
+
+article section h2 {
+	font-size: 20pt;
+}
+
+
+article section em {
+	font-style: italic;
+	color: #000;
+}
+
+article section strong {
+	font-weight: 700;
+	color: #000;
+}
+
+
+article section blockquote p:before, article section blockquote p:after {
+	font-size: 30pt;
+	position: absolute;
+	color: #ddd;
+}
+
+article section blockquote p:before {
+	content: "\201C";
+	margin-left: -20px;
+}
+
+article section blockquote p:after {
+	content: "\201D";
+	margin-top: 5px;
+}
+
+article section blockquote {
+	padding: 0px 1em;
+	font-size: 18pt;
+	line-height: 1.4em;
+	color: #aaa;
+}
+
+blockquote + p cite:before {
+	content: "\2014 ";
+}
+
+blockquote + p cite {
+	font-style: italic;
+	display: block;
+	margin: -1.6em 1em 0px 1em;
+}
+
+article section ul {
+	list-style: square;
+	margin: 0px 1em;
+}
+
+article section ol {
+	list-style: decimal;
+	margin: 0px 1em;
+}
+
+article section li {
+	margin: 1em;
+}
+
+article section hr {
+	border: none;
+	border-bottom: 1px solid #dcddde;
+}
+
+article section pre {
+	font-family: Courier, "Courier New" !important;
+	font-size: 10pt;
+	line-height: 1em;
+	color: #000;
+	background: rgba(228,230,232,0.2);
+	padding: 10px;
+	box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.025);
+}
+
+article section .highlight pre {
+	line-height: 1.2em;
+	background: none;
+	padding: 0px;
+}
+
+article section .highlight {
+	font-family: Courier, "Courier New" !important;
+	font-size: 10pt;	
+	
+	/* yes, this is trickery */
+	margin: 0px -1000px 0px -1000px;
+	
+	
+	background: rgba(121,159,190,0.1);
+	padding: 50px 0px;
+	color: #555;
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.75);
+	
+	box-shadow:
+		0px -1px 0px 0px rgba(255,255,255,0.4)
+		, 0px 0px 20px 10px rgba(255,255,255,0.75)
+		, inset 0px 3px 20px 3px rgba(0,0,0,0.15)
+		, 0px -5px 10px 0px rgba(157,174,191,0.5)
+		;
+}
+
+article section .highlight pre {
+	width: 640px;
+	margin: 0px auto 0px auto;
+	word-wrap: break-word;
+}
+
+
+
+
+
+article footer {
+	width: 640px;
+	margin: 0px auto 0px auto;
+}
+
+
+
+
+#footer {
+	font-size: 10pt;
+	background: rgba(121,129,140,0.2);
+	padding: 50px 0px;
+	color: #969ba3;
+	text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
+	
+	box-shadow:
+		0px 0px 20px 10px #fff
+		, inset 0px 0px 10px 0px rgba(0,0,0,0.1)
+		;
+}
+
+
+
