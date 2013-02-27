@@ -2,22 +2,24 @@
 layout: default
 ---
 <div id="article-nav">
-	<a href="#prev">&larr;</a>
-	<a href="#next">&rarr;</a>
+	{% if page.previous %} 
+		<a rel="prev" href="{{ page.previous.url }}">&larr;</a>
+	{% endif %}
+	{% if page.next %}
+		<a rel="next" href="{{ page.next.url }}">&rarr;</a>
+	{% endif %}
 </div>
 <article>
 	<header>
 		<div class="container">
 			<h1>{{ page.title }}</h1>
 			<p>{{ page.synopsis }}</p>
+			<ul class="article-date">
+				<li>{{ page.date | date: "%B %d, %Y" }}</li>
+				<li><a href="/">&larr; Back to Front</a></li>
+			</ul>
 		</div>
 	</header>
-	<div class="container">
-		<ul class="article-date">
-			<li>{{ page.date | date: "%B %d, %Y" }}</li>
-			<li><a href="/">&larr; Back to Front</a></li>
-		</ul>
-	</div>
 	<section>
 		{{ content }}
 	</section>

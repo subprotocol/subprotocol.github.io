@@ -11,6 +11,7 @@ And so we begin
 
 Lorem ipsum dolor sit amet, *consectetur adipiscing elit*. Re mihi non aeque satisfacit, **et quidem** locis pluribus. Quamvis enim depravatae non sint, pravae tamen esse possunt. Sin aliud quid voles, postea. Ergo adhuc, [quantum equidem](http://subprotocol.com/) intellego, causa non videtur fuisse mutandi nominis. Duo Reges: constructio interrete. Itaque hic ipse iam pridem est reiectus;
 
+<!-- more -->
 
 Code Snippit
 ------------

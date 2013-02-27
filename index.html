@@ -2,4 +2,27 @@
 layout: default
 title: Welcome
 ---
-index.html content
+{% for page in paginator.posts %}
+	<article>
+		<header>
+			<div class="container">
+				<h1>{{ page.title }}</h1>
+				<p>{{ page.synopsis }}</p>
+				<ul class="article-date">
+					<li>{{ page.date | date: "%B %d, %Y" }}</li>
+					<li><a href="{{ page.url }}">Read &rarr;</a></li>
+				</ul>
+			</div>
+		</header>
+		<section>
+			{{ page.content | split:'<!-- more -->' | first }}
+			
+			{% capture sz %}{{ page.content | split:'<!-- more -->' | size }}{% endcapture %}
+			{% if sz != "1" %}
+			<p>
+				<a class="continue-reading" href="{{ page.url }}">Continue Reading</a>
+			</p>
+			{% endif %}
+		</section>
+	</article>
+{% endfor %}
