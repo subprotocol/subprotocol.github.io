@@ -1,0 +1,3 @@
+[submodule "verlet-js"]
+	path = verlet-js
+	url = git://github.com/subprotocol/verlet-js.git
