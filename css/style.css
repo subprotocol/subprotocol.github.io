@@ -208,6 +208,11 @@ article header h1 {
 	text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
 }
 
+article header h1 a {
+	color: #fff;
+	text-decoration: none;
+}
+
 article header p {
 	color: #a5aab2;
 	font-size: 20pt;
@@ -215,6 +220,46 @@ article header p {
 	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
 	line-height: 1.4em;
 	min-height: 80px;
+}
+
+article header h1 .num-comments {
+	font-family: sans-serif;
+	font-weight: bold;
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	
+	top: 12px;
+	left: 4px;
+	
+	padding: 3px 9px;
+	background: #26ae90;
+	font-size: 14pt;
+	border-radius: 3px;
+	line-height: 16px;
+	vertical-align: top;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.4);
+}
+
+article header h1 .num-comments:after {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+	left: 9px;
+	top: 28px;
+	border: 3px solid;
+	border-color: #26ae90 transparent transparent #26ae90;
+}
+
+article header h1 .num-comments:hover {
+	background: #fff;
+	color: #000;
+	text-shadow: none;
+}
+
+article header h1 .num-comments:hover:after {
+	border-color: #fff transparent transparent #fff;
 }
 
 .article-date {
@@ -471,5 +516,13 @@ article footer {
 		;
 }
 
+
+#disqus_thread {
+	color: #f00;
+}
+
+#disqus_thread a {
+	color: #26ae90 !important;
+}
 
 

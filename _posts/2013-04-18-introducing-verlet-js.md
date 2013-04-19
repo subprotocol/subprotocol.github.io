@@ -4,6 +4,7 @@ author: Sean
 email: smprotocol@gmail.com
 title: Introducing Verlet-JS
 synopsis: An open source physics engine made for constructing 2D dynamic body simulations.
+comments: true
 ---
 
 Particle meets constraint, and so [verlet-js](/verlet-js/) was born.

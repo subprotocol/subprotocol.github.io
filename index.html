@@ -6,7 +6,7 @@ title: Welcome
 	<article>
 		<header>
 			<div class="container">
-				<h1>{{ page.title }}</h1>
+				<h1><a href="{{ page.url }}">{{ page.title }}</a>{% if page.comments %} <a class="num-comments" href="{{ page.url }}#disqus_thread">0</a>{% endif %}</h1>
 				<p>{{ page.synopsis }}</p>
 				<ul class="article-date">
 					<li>{{ page.date | date: "%B %d, %Y" }}</li>
