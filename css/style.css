@@ -106,10 +106,12 @@ body {
 
 #article-nav a[rel="prev"] {
 	left: 20px;
+	-webkit-text-stroke: 0.5px;
 }
 
 #article-nav a[rel="next"] {
 	right: 20px;
+	-webkit-text-stroke: 0.5px;
 }
 
 
@@ -151,7 +153,7 @@ article {
 	font-size: 12pt;
 	font-weight: 700;
 	width: 80px;
-	height: 27px;
+	height: 28px;
 	padding-left: 2px;
 	border-left: 4px solid #26ae90;
 	
@@ -169,6 +171,15 @@ article {
 	position: absolute;
 	width: 240px;
 	margin: -26px 0px 0px 100px;
+}
+
+#header .github {
+	color: #737883;
+}
+
+#header .email:hover, #header .github:hover {
+	color: #26ae90;
+	-webkit-transition: color 0.2s;
 }
 
 
@@ -242,6 +253,8 @@ footer .article-date {
 .article-date a {
 	color: #919191;
 	text-decoration: none;
+	
+	font-size: 10pt;
 }
 
 .article-date a:hover {
