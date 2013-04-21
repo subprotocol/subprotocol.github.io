@@ -1,3 +1,6 @@
+name: Sub Protocol
+description: "Collective musings on &lt;code&gt;, #devops, {algorithm}, and randomness."
+url: http://subprotocol.com/
 markdown: rdiscount
 pygments: true
 lsi: false
