@@ -4,4 +4,4 @@ url: http://subprotocol.com/
 markdown: rdiscount
 pygments: true
 lsi: false
-paginate: 2
+paginate: 5

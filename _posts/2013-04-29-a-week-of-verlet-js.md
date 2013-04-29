@@ -25,6 +25,7 @@ I thought I would share a few of the highlights of this past week:
 
 * The overall sentiment that I have received thus far is that, what can be accomplished with Javascript these days is completely mind-bending.
 
+<!-- more -->
 
 Looking to the horizon
 ----------------------
