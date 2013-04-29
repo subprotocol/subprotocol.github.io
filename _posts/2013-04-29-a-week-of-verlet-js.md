@@ -7,7 +7,7 @@ synopsis: "The little (physics) engine that could."
 comments: true
 ---
 
-It has been an amazing (*crazy!*) week since [releasing verlet-js](http://localhost:4000/2013/04/18/introducing-verlet-js.html) to the world. The tiny library&mdash;which really just lets you link particles together&mdash;seems to have deeply struck a chord with people.  
+It has been an amazing (*crazy!*) week since [releasing verlet-js](/2013/04/18/introducing-verlet-js.html) to the world. The tiny library&mdash;which really just lets you link particles together&mdash;seems to have deeply struck a chord with people.  
 
 The reception and feedback that I've received so far has been wonderful! My mind is spinning with ideas of where to take it next. My focus, I think, will be to make verlet-js a playground for those like me; the creators, explorers, and the practitioners at heart.
 
