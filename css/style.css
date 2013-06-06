@@ -134,6 +134,16 @@ article {
 	float: right;
 }
 
+#referrerly {
+	margin-left: 50px;
+	position: relative;
+	top: -5px;
+}
+
+#referrerly:hover img {
+	opacity: 0.7;
+}
+
 #header {
 	background: #292d30;
 	color: #82888d;
