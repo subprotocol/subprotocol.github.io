@@ -361,6 +361,21 @@ article section h2 {
 	font-size: 20pt;
 }
 
+h4 {
+	font-size: 12pt;
+	margin-top: 80px;
+	padding-bottom: 20px;
+	color: #666;
+	text-shadow: 1px 1px 0px #fff;
+	text-transform: uppercase;
+}
+
+h4 + .highlight {
+	margin-top: -80px !important;
+	padding-top: 80px !important;
+}
+
+
 
 article section em {
 	font-style: italic;
