@@ -20,12 +20,13 @@ comments: true
 Originally built to solve distributed machine learning problems, Spark has quickly proven to also be the Swiss-Army knife of Bigdata. Companies latching onto the Bigdata movement are able to store mounds of data, but are still stuck with one very perplexing problem: extracting business intelligence is extremely difficult, even with existing tools that sit on top of Hadoop.  Spark helps solve this conundrum by providing a very rich, accessible, and expressive API that makes working with Bigdata a breeze.
 
 
+<!-- more -->
+
+
 Resilient Distributed Datasets (RDDs)
 -------------------------------------
 
-Instead of relying on replication to make datasets reliable, Spark instead tracks lineage and leverages checkpointing. This allows more cluster resources to go directly toward your computations.
-
-An RDD can be thought of as a handle to a distributed dataset, with fragments of the data spread all around the cluster.  In the event of failure, Spark is able to consult the lineage and re-construct any lost partitions. If the cost to recover data is high you can also selectively employ replication on any dataset.
+An RDD can be thought of as a handle to a distributed dataset, with fragments of the data spread all around the cluster.  Instead of relying on replication to make datasets reliable, Spark instead tracks lineage and leverages checkpointing. This allows more cluster resources to go directly toward your computations.  If the cost to recover data is high you can also selectively employ replication on any dataset.
 
 More information about how RDDs works and the research behind Spark can be found on the projects website: [http://spark-project.org/research/](http://spark-project.org/research/)
 
@@ -95,7 +96,7 @@ With underpinnings utilizing the RDD abstraction, Spark Streaming differs from o
 Spark Streaming jobs also look syntactically no different than Spark batch jobs. Additional methods are provided to make windowed operations easy.
 
 
-Unlike higher-level streaming frameworks such as Trident&mdash;which carry along lots of syntactic cruft&mdash;Spark present you with a very clean interface with minimal boilerplate.
+Unlike higher-level streaming frameworks such as Trident&mdash;which carry along lots of syntactic cruft&mdash;Spark presents you with a very clean interface with minimal boilerplate.
 
 #### Streaming Word Count
 
@@ -118,7 +119,7 @@ An excellent place to dive in is by viewing the examples on github:
 * [Spark Streaming examples](https://github.com/mesos/spark/tree/master/examples/src/main/scala/spark/streaming/examples)
 
 
-An interactive shell is also included with Spark, so you don't even have to setup a project to get started.  Just start typing code into a prompt locally and you can immediately see it run. For details see:
+An interactive shell is also included with Spark, so you don't even need to setup a project to get started.  Just start typing code into a prompt locally and you can immediately see it run. For details see:
 
 * [http://spark-project.org/docs/latest/quick-start.html](http://spark-project.org/docs/latest/quick-start.html)
 
