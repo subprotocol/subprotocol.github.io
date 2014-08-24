@@ -2,27 +2,45 @@
 layout: default
 title: Welcome
 ---
-{% for page in paginator.posts %}
-	<article>
-		<header>
-			<div class="container">
-				<h1><a href="{{ page.url }}">{{ page.title }}</a>{% if page.comments %} <a class="num-comments" href="{{ page.url }}#disqus_thread">0</a>{% endif %}</h1>
-				<p>{{ page.synopsis }}</p>
-				<ul class="article-date">
-					<li>{{ page.date | date: "%B %d, %Y" }}</li>
-					<li><a href="{{ page.url }}">Read &rarr;</a></li>
-				</ul>
-			</div>
-		</header>
-		<section>
-			{{ page.content | split:'<!-- more -->' | first }}
+
+
+<div id="test" class="post-listing js-packery" data-packery-options='{ "gutter": ".gutter-sizer", "itemSelector": ".post-preview", "columnWidth": ".grid-sizer" }'>
+    <div class="gutter-sizer"></div>
+    <div class="grid-sizer"></div>
+	
+	{% assign counter = 0 %}
+	{% for page in paginator.posts %}
+
+	{% capture counter %}{{ counter | plus:1 }}{% endcapture %}
+	{% if counter == "4" %}
+	<div class="post-preview text">
+		<div id="bsa">
+			<script type="text/javascript" src="http://cdn.adpacks.com/adpacks.js?legacyid=1285933&zoneid=1386&key=3df5e2ea1c6a237386fb9d4cdf5b99f0&serve=C6SD52Y&placement=subprotocolcom&circle=dev" id="_adpacks_js"></script>
+		</div>
+	</div>
+	{% endif %}
 			
-			{% capture sz %}{{ page.content | split:'<!-- more -->' | size }}{% endcapture %}
-			{% if sz != "1" %}
-			<p>
-				<a class="continue-reading" href="{{ page.url }}">Continue Reading</a>
-			</p>
-			{% endif %}
-		</section>
-	</article>
-{% endfor %}
+	
+		<a class="post-preview {% if page.image %}image{% else %}text{% endif %}" href="{{ page.url }}">
+		{% if page.image %}
+			<img src="{{ page.image }}" />
+		{% else %}
+			<h1>{{ page.title }}</h1>
+			<p>{{ page.synopsis }}</p>
+			<span class="btn">Read</span>
+		{% endif %}
+		</a>
+	{% endfor %}
+</div>
+
+<script>
+
+$(document).ready(function () {
+	
+	setTimeout(function () {
+		$('#test').packery();
+	}, 300);
+	
+});
+
+</script>
