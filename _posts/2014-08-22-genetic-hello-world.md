@@ -196,7 +196,7 @@ $(document).ready(function () {
 ## Code
 
 
-{% highlight javascript %}
+{% highlight javascript linenos %}
 
 var genetic = Genetic.create();
 

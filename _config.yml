@@ -2,7 +2,7 @@ name: Sub Protocol
 description: "Collective musings on &lt;code&gt;, #devops, {algorithm}, and randomness."
 url: http://subprotocol.com/
 markdown: rdiscount
-highlighter: true
+highlighter: pygments
 lsi: false
 paginate: 100
 permalink: "/system/:title.html"
