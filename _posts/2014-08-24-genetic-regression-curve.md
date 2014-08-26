@@ -7,7 +7,7 @@ comments: true
 image: /images/genetic-curve.png
 ---
 
-<script src="/js/genetic-0.1.10.min.js"></script>
+<script src="/js/genetic-0.1.12.min.js"></script>
 
 # Curve Fitting using Genetic.js
 

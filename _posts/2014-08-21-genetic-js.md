@@ -30,7 +30,7 @@ The genetic-js interface exposes a few simple concepts and primitives, you just 
 | select1(population)                       | Individual               | Yes        | See [Selection](#selection) section below
 | select2(population)                       | Individual               | Optional   | Selects a pair of individuals from a population. [Selection](#selection)
 | generation(pop, gen, stats)               | Boolean                  | Optional   | Called for each generation.  Return false to terminate end algorithm (ie- if goal state is reached)
-| notification(pop, gen, stats, isFinished) | Void                     | Optional   | Runs in the calling context. All functions other than are run in a web worker.
+| notification(pop, gen, stats, isFinished) | Void                     | Optional   | Runs in the calling context. All functions other than this one are run in a web worker.
 
 
 ## Optimizer
@@ -45,7 +45,7 @@ The optimizer specifies how to rank individuals against each other based on an a
 
 ## Selection
 
-An algorithm can be either genetic or evolutionary depending on which selection operations are used.  An algorithm is evolutionary if it only use a Single (select1) operator¸  If both Single and Pair-wise operations are used (and if crossover is implemented) it is genetic.
+An algorithm can be either genetic or evolutionary depending on which selection operations are used.  An algorithm is evolutionary if it only uses a Single (select1) operator.  If both Single and Pair-wise operations are used (and if crossover is implemented) it is genetic.
 
 
 | Select Type         | Required    | Description
@@ -76,13 +76,13 @@ An algorithm can be either genetic or evolutionary depending on which selection 
 
 
 ```javascript
-var ga = Genetic.create();
+var genetic = Genetic.create();
 
 // more likely allows the most fit individuals to survive between generations
-ga.select1 = Genetic.Select1.RandomLinearRank;
+genetic.select1 = Genetic.Select1.RandomLinearRank;
 
 // always mates the most fit individual with random individuals
-ga.select2 = Genetic.Select2.FittestRandom;
+genetic.select2 = Genetic.Select2.FittestRandom;
 
 // ...
 ```
@@ -98,12 +98,28 @@ ga.select2 = Genetic.Select2.FittestRandom;
 | fittestAlwaysSurvives | true     | Boolean     | Prevents losing the best fit between generations
 | maxResults            | 100      | Real Number | The maximum number of best-fit results that webworkers will send per notification
 | webWorkers            | true     | Boolean     | Use [Web Workers](http://en.wikipedia.org/wiki/Web_worker) (when available)
+| skip                  | 0        | Real Number | Setting this higher throttles back how frequently `genetic.notification` gets called in the main thread.
 
 
 ## Building
-* make
-* make test
-* make clean
-* make distclean
+
+To clone, build, and test Genetic.js issue the following command:
+
+```bash
+git clone git@github.com:subprotocol/genetic-js.git && make distcheck
+```
+
+| Command               | Description
+| --------------------- | -----------
+| make                  | Automatically install dev-dependencies, builds project, places library to js/ folder
+| make check            | Runs test cases
+| make clean            | Removes files from js/ library
+| make distclean        | Removes both files from js/ library and dev-dependencies
+| make distcheck        | Equivlant to running `make distclean && make && check`
+
+
+## Contributing
+
+Feel free to open issues and send pull-requests.
 
 
