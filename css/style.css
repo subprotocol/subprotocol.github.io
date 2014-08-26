@@ -103,9 +103,7 @@ body {
 	padding: 0px;
 	width: 25%;
 	float: left;
-	/*max-width: 300px;*/
-	
-	/*background: rgb(33,33,33);*/
+	overflow: hidden;
 }
 
 .post-preview:before {
@@ -117,16 +115,6 @@ body {
 	z-index: 100;
 }
 
-.post-preview.large {
-	width: 75%;
-	color: #fff;
-	
-}
-
-.post-preview.large h2 {
-	font-family: 'Josefin Slab', serif;
-	font-size: 20pt;
-}
 
 
 
@@ -163,10 +151,6 @@ body {
 
 
 
-
-.post-preview {
-	overflow: hidden;
-}
 
 .post-preview.image img {
 	display: block;
@@ -227,8 +211,6 @@ body {
 a.post-preview {
 	color: #fff;
 	text-decoration: none;
-	/*background: linear-gradient(rgb(33,33,33), rgb(53,53,53));*/
-	
 	background: #444;
 }
 
@@ -237,31 +219,41 @@ a.post-preview {
 	text-underline: none;
 	margin: 0px;
 	padding: 0px;
-	text-shadow: 1px 1px 0px #000;
-	padding: 8px 8px 0px 8px;
+	padding: 10px 10px 0px 10px;
+	
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
 }
 
 .post-preview p {;
 	margin: 0px;
-	padding: 8px 8px 4px 8px;
+	padding: 10px 10px 5px 10px;
 	text-underline: none;
-	color: #888;
-	text-shadow: 1px 1px 0px rgba(0,0,0,0.2);
+	color: #fff;
+	text-shadow: 1px 1px 0px rgba(0,0,0,0.1);
 }
 
 .post-preview.text {
 	-webkit-font-smoothing: antialiased;
-	background: #494949;
-	background: -moz-linear-gradient(-45deg,  #494949 51%, #303030 100%);
-	background: -webkit-gradient(linear, left top, right bottom, color-stop(51%,#494949), color-stop(100%,#303030));
-	background: -webkit-linear-gradient(-45deg,  #494949 51%,#303030 100%);
-	background: -o-linear-gradient(-45deg,  #494949 51%,#303030 100%);
-	background: -ms-linear-gradient(-45deg,  #494949 51%,#303030 100%);
-	background: linear-gradient(135deg,  #494949 51%,#303030 100%);
+	/*box-shadow: inset 0px 0px 40px 20px rgba(0,0,0,0.2);*/
+	
+	
+	box-shadow: inset 8px 8px 30px 10px rgba(0,0,0,0.15);
+	
+	font-size: 10pt;
 }
 
-.post-preview.text:hover {
+.post-preview:hover.text {
+	/*box-shadow: inset 4px 4px 10px 5px rgba(0,0,0,0.2);*/
 }
+
+.post-preview.text:nth-child(2n) {
+	background: #888;
+}
+
+.post-preview.text:nth-child(2n + 1) {
+	background: #FA3636;
+}
+
 
 post-preview.image {
 	padding: 0px;
@@ -270,16 +262,18 @@ post-preview.image {
 
 .btn {
 	display: inline-block;
-	margin: 8px 8px 8px 8px;
-	background: rgb(103, 157, 124);
-	color: #000;
+	margin: 10px 10px 10px 10px;
+	background: #000;
+	color: #fff;
 	padding: 4px 8px;
 	border-radius: 2px;
 	color: #fff;
-	
+	font-weight: bold;
 }
+
 .post-preview:hover .btn {
-	background: rgb(110, 177, 144);
+	background: #fff;
+	color: #000;
 }
 
 #bsa {
@@ -555,8 +549,9 @@ body .one .bsa_it_ad:hover img { -moz-box-shadow: 0 0 3px #000; -webkit-box-shad
 body .one .bsa_it_ad .bsa_it_i { display: block; padding: 0; margin: 0px 10px 10px 0px; }
 body .one .bsa_it_ad .bsa_it_i img { padding: 0; border: none; }
 body .one .bsa_it_ad .bsa_it_t { padding: 6px 0; }
-body .one .bsa_it_ad .bsa_it_d { padding: 0; font-size: 10px; color: #ccc; }
-body .one .bsa_it_p { display: none; }
-body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 9px; margin: 12px 15px 0; text-align: right; color: #ccc; }
+body .one .bsa_it_ad .bsa_it_d { padding: 0; font-size: 10px; color: #fff; }
+body .one .bsa_it_p { }
+body .one .bsa_it_p a { color: #fff; }
+body #bsap_aplink, body #bsap_aplink:hover { display: block; font-size: 9px; margin: 12px 15px 0; text-align: right; color: #fff; }
 
 
