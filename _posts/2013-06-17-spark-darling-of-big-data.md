@@ -2,11 +2,15 @@
 layout: post
 author: Sean
 email: smprotocol@gmail.com
-title: Spark, the Darling of Bigdata
+title: Spark, Darling of Bigdata
 synopsis: "Introduction to Spark, a powerful and fast real-time map/reduce framework."
 comments: true
+image: /images/spark.png
+disqus_url: http://subprotocol.com/2013/06/17/spark-darling-of-big-data.html
 ---
 
+
+# Spark, the Darling of Big Data
 
 <img style="float: right;" src="/static-content/images/spark.png" width="127" height="67" alt="Spark project logo" />
 
