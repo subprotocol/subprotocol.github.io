@@ -3,32 +3,34 @@ layout: default
 title: Welcome
 ---
 
-
-<div id="test" class="post-listing js-packery" data-packery-options='{ "gutter": ".gutter-sizer", "itemSelector": ".post-preview", "columnWidth": ".grid-sizer" }'>
-    <div class="gutter-sizer"></div>
-    <div class="grid-sizer"></div>
-	
+<div class="post-listing">	
 	{% assign counter = 0 %}
 	{% for page in paginator.posts %}
 
-	{% capture counter %}{{ counter | plus:1 }}{% endcapture %}
-	{% if counter == "4" %}
-	<div class="post-preview text">
-		<div id="bsa">
-			<script type="text/javascript" src="http://cdn.adpacks.com/adpacks.js?legacyid=1285933&zoneid=1386&key=3df5e2ea1c6a237386fb9d4cdf5b99f0&serve=C6SD52Y&placement=subprotocolcom&circle=dev" id="_adpacks_js"></script>
-		</div>
-	</div>
-	{% endif %}
-			
-	
-		<a class="post-preview {% if page.image %}image{% else %}text{% endif %}" href="{{ page.url }}">
-		{% if page.image %}
-			<img src="{{ page.image }}" />
-		{% else %}
-			<h1>{{ page.title }}</h1>
-			<p>{{ page.synopsis }}</p>
-			<span class="btn">Read</span>
+		{% capture counter %}{{ counter | plus:1 }}{% endcapture %}
+		{% if counter == "4" %}
+		<span class="post-preview text">
+			<div id="bsa">
+				<script type="text/javascript" src="http://cdn.adpacks.com/adpacks.js?legacyid=1285933&zoneid=1386&key=3df5e2ea1c6a237386fb9d4cdf5b99f0&serve=C6SD52Y&placement=subprotocolcom&circle=dev" id="_adpacks_js"></script>
+			</div>
+		</span>
 		{% endif %}
+			
+		<a class="post-preview text" href="{{ page.url }}">
+			<div class="pad">
+
+			<h1>{{ page.title }}</h1>
+			
+			{% if page.image %}
+				<div class="img-container">
+					<img src="{{ page.image }}" />
+				</div>
+			{% endif %}
+			
+			<p>{{ page.synopsis }}</p>
+			
+			<!--<span class="btn">Read</span>-->
+			</div>
 		</a>
 	{% endfor %}
 </div>

@@ -3,6 +3,7 @@ layout: post
 author: Sean
 email: smprotocol@gmail.com
 title: "Genetic.js Hello World"
+synopsis: "The Hello World of Genetic Algorithms is a simple phrase solver. While useless in terms of utility, it is probably the simplest way to understand this class of algorithm."
 comments: true
 image: /images/genetic-hello-world.png
 ---
@@ -11,7 +12,7 @@ image: /images/genetic-hello-world.png
 
 # Genetic Algorithm Hello World
 
-The _Hello World of Genetic Algorithms_ is a simple phrase solver.  While useless in terms of utility it is probably the simplest way to understand this class of algorithm.
+The _Hello World of Genetic Algorithms_ is a simple phrase solver.  While useless in terms of utility, it is probably the simplest way to understand this class of algorithm.
 
 ## How it Works
 

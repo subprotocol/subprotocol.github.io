@@ -3,6 +3,7 @@ layout: post
 author: Sean
 email: smprotocol@gmail.com
 title: "Verlet Hello World"
+synopsis: "Demonstrating draggable objects and constraint stiffness coefficients."
 comments: true
 image: /images/verlet.png
 ---

@@ -4,6 +4,7 @@ author: Sean
 email: smprotocol@gmail.com
 title: "Curve Fitting using Genetic.js"
 comments: true
+synopsis: "From a plot of vertices, this genetic algorithm optimizes a continious function to best fit the data (aka least squared error)."
 image: /images/genetic-curve.png
 ---
 

@@ -3,7 +3,7 @@ layout: post
 author: Sean
 email: smprotocol@gmail.com
 title: Spark, the Darling of Bigdata
-synopsis: "Introduction to Spark, a powerful and fast real-time map/reduce framework"
+synopsis: "Introduction to Spark, a powerful and fast real-time map/reduce framework."
 comments: true
 ---
 

@@ -5,6 +5,7 @@ email: smprotocol@gmail.com
 title: Genetic.js
 synopsis: "An advanced evolutionary and genetic algorithm library for Javascript.  Lightweight, hackable, and features seamless webworker support."
 comments: true
+image: /images/genetic-js.png
 ---
 
 # Genetic.js
