@@ -33,7 +33,7 @@ In Genetic.js crossover **always** results in two children from from two parents
 
 ### Fitness
 
-The phrase solver demo scores entities (strings) by how close they are to the goal.  The formula is simple, add one for each character that matches. Also add fractional points if it is close.  The result is a floating point number, the larger the better.  See `genetic.fitness = function(entity) {` for implementation.
+The phrase solver demo scores entities (strings) by how close they are to the goal.  The formula is simple, add one for each character that matches. Also add fractional points if it is close.  The result is a floating point number, the larger the better.  See `genetic.fitness = function(entity)` for implementation.
 	
 
 
