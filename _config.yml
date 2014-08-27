@@ -6,3 +6,5 @@ highlighter: pygments
 lsi: false
 paginate: 100
 permalink: "/system/:title.html"
+gems:
+  - jekyll-redirect-from

@@ -6,6 +6,7 @@ title: "Verlet Hello World"
 synopsis: "Demonstrating draggable objects and constraint stiffness coefficients."
 comments: true
 image: /images/verlet.png
+redirect_from: "/verlet-js/examples/shapes.html"
 ---
 
 <script type="text/javascript" src="/js/verlet-1.0.0.min.js"></script>
