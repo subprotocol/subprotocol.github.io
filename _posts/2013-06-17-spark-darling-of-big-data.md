@@ -15,7 +15,7 @@ disqus_url: http://subprotocol.com/2013/06/17/spark-darling-of-big-data.html
 <img style="float: right;" src="/static-content/images/spark.png" width="127" height="67" alt="Spark project logo" />
 
 
-[Spark](http://spark-project.org/) is a new up-and-coming open source distributed computing framework from the UC Berkeley [AMPLab](https://amplab.cs.berkeley.edu/).  By using a clever abstraction called an RDD (resilient distributed dataset), it is able to very elegantly unify the batch and streaming worlds into a single comprehensive framework.
+[Spark](http://spark.apache.org/) is a new up-and-coming open source distributed computing framework from the UC Berkeley [AMPLab](https://amplab.cs.berkeley.edu/).  By using a clever abstraction called an RDD (resilient distributed dataset), it is able to very elegantly unify the batch and streaming worlds into a single comprehensive framework.
 
 
 <img style="float: right;" src="/static-content/images/spark-workflow.png" width="405" height="282" alt="Spark driver workflow" />
@@ -32,7 +32,7 @@ Resilient Distributed Datasets (RDDs)
 
 An RDD can be thought of as a handle to a distributed dataset, with fragments of the data spread all around the cluster.  Instead of relying on replication to make datasets reliable, Spark instead tracks lineage and leverages checkpointing. This allows more cluster resources to go directly toward your computations.  If the cost to recover data is high you can also selectively employ replication on any dataset.
 
-More information about how RDDs works and the research behind Spark can be found on the projects website: [http://spark-project.org/research/](http://spark-project.org/research/)
+More information about how RDDs works and the research behind Spark can be found on the projects website: [https://spark.apache.org/research.html](https://spark.apache.org/research.html)
 
 
 Scala
@@ -119,13 +119,13 @@ Where go go from here
 
 An excellent place to dive in is by viewing the examples on github:
 
-* [Spark examples](https://github.com/mesos/spark/tree/master/examples/src/main/scala/spark/examples)
-* [Spark Streaming examples](https://github.com/mesos/spark/tree/master/examples/src/main/scala/spark/streaming/examples)
+* [Spark examples](https://github.com/apache/spark/tree/master/examples)
+* [Spark Streaming examples](https://github.com/apache/spark/tree/master/examples/src/main/scala/org/apache/spark/examples/streaming)
 
 
 An interactive shell is also included with Spark, so you don't even need to setup a project to get started.  Just start typing code into a prompt locally and you can immediately see it run. For details see:
 
-* [http://spark-project.org/docs/latest/quick-start.html](http://spark-project.org/docs/latest/quick-start.html)
+* [http://spark.apache.org/docs/latest/quick-start.html](http://spark.apache.org/docs/latest/quick-start.html)
 
 
 

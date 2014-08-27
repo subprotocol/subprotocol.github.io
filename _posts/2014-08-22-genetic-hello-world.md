@@ -14,6 +14,7 @@ image: /images/genetic-hello-world.png
 
 The _Hello World of Genetic Algorithms_ is a simple phrase solver.  While useless in terms of utility, it is probably the simplest way to understand this class of algorithm.
 
+
 ## How it Works
 
 Entities in this system start out as randomly generated strings (See `genetic.seed = function()` below).  At each iteration a portion of entites are selected for mutation.  Another portition is selected for crossover (aka. mating).  From there you let the system run and watch it converge on a solution, there isn't much more to it than that!
@@ -37,6 +38,8 @@ The phrase solver demo scores entities (strings) by how close they are to the go
 
 
 ## Phrase Solver Demo
+
+Refer to [/system/genetic-js.html](/system/genetic-js.html) for all the configuration/options that are available. The code can be cloned from [https://github.com/subprotocol/genetic-js](https://github.com/subprotocol/genetic-js).
 
 <textarea id="quote" style="width: 300px; height: 100px;">Insanity is doing the same thing over and over again and expecting different results</textarea>
 

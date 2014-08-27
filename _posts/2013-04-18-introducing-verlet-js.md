@@ -9,16 +9,14 @@ image: /images/verlet-code.png
 disqus_url: http://subprotocol.com/2013/04/18/introducing-verlet-js.html
 ---
 
-Particle meets constraint, and so [verlet-js](/verlet-js/) was born.
-
-
-
-
 
 A framework for creating
 ========================
 
-I was experimenting with code one evening and ended up accidentally stumbling onto a new playground for my imagination, and what has now become [verlet-js](/verlet-js/).
+Particle meets constraint, and so [verlet-js](https://github.com/subprotocol/verlet-js) was born.
+
+
+I was experimenting with code one evening and ended up accidentally stumbling onto a new playground for my imagination, and what has now become [verlet-js](https://github.com/subprotocol/verlet-js).
 
 It is all based off an iterative technique called [Verlet integration](http://en.wikipedia.org/wiki/Verlet_integration), which greatly simplifies force and motion calculations.  The gist of it is that you can easily model intricate objects and dynamic behaviors*&mdash;and it's insanely fun!*
 
@@ -26,10 +24,10 @@ It is all based off an iterative technique called [Verlet integration](http://en
 What I've built so far
 ----------------------
 
-[![Shapes / Hello world example](/static-content/images/shapes.png)](/verlet-js/examples/shapes.html)
-[![Fractal tree example](/static-content/images/tree.png)](/verlet-js/examples/tree.html)
-[![Cloth example](/static-content/images/cloth.png)](/verlet-js/examples/cloth.html)
-[![Spiderweb example](/static-content/images/spiderweb.png)](/verlet-js/examples/spiderweb.html)
+[![Shapes / Hello world example](/static-content/images/shapes.png)](/system/verlet-hello-world.html)
+[![Fractal tree example](/static-content/images/tree.png)](/system/tree.html)
+[![Cloth example](/static-content/images/cloth.png)](/system/cloth.html)
+[![Spiderweb example](/static-content/images/spiderweb.png)](/system/spider.html)
 
 
 How it works
@@ -52,7 +50,7 @@ All it takes is an HTML5 canvas, a VerletJS object, and you can be well on your 
 
     sim.frame(16);
 
-See the [Shapes example](/verlet-js/examples/shapes.html) for full source code.
+See the [Shapes example](/system/verlet-hello-world.html) for full source code.
 
 {% highlight javascript %}
 
@@ -84,5 +82,4 @@ loop();
 Where to go from here?
 ----------------------
 
-* View the [verlet-js](/verlet-js/) project page for more information.
 * Clone, fork, view the [codebase on GitHub](https://github.com/subprotocol/verlet-js). Play with it locally, and go nuts! Contributions in the form of pull requests (bug-fixes, new examples, etc..) are always welcome.

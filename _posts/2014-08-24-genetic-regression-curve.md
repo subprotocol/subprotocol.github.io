@@ -12,7 +12,7 @@ image: /images/genetic-curve.png
 
 # Curve Fitting using Genetic.js
 
-From a plot of vertices, this genetic algorithm optimizes a continious function to best fit the data (aka least squared error).  Genetic.js automatically runs the algorithm in the background (web worker) so that the UI experience isn't compromised.
+From a plot of vertices, this genetic algorithm optimizes a continious function to best fit the data (aka least squared error).  Genetic.js automatically runs the algorithm in the background with web workers so that the UI experience isn't compromised.
 
 
 ## Demo
@@ -595,5 +595,9 @@ A random stepping drift is applied to entities (represented as an array of coeff
 
 Crossover can be disabled by setting it to 0% (0.0 from the dropdown), which causes the simulation to run as an evolutionary algorithm.
 
+## Helpful Links
 
+* [List of Genetic.js configuration/options](/system/genetic-js.html)
+* [Examples Source Code](https://github.com/subprotocol/genetic-js/tree/master/examples)
+* [Project on Github](https://github.com/subprotocol/genetic-js)
 

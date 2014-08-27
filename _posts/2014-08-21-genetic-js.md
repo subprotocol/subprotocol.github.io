@@ -16,6 +16,9 @@ Until now, no such thing existed. Now you can have my cake, and optimize it too.
 
 Have fun optimizing all your optimizations!
 
+* Demo: [Genetic Phrase Solver](/system/genetic-hello-world.html)
+* Demo: [Genetic Curve Fitter](/system/genetic-regression-curve.html)
+* Source Code: [https://github.com/subprotocol/genetic-js](https://github.com/subprotocol/genetic-js)
 
 ## Population Functions
 
