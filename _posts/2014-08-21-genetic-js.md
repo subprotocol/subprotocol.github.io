@@ -16,9 +16,19 @@ Until now, no such thing existed. Now you can have my cake, and optimize it too.
 
 Have fun optimizing all your optimizations!
 
-* Demo: [Genetic Phrase Solver](/system/genetic-hello-world.html)
-* Demo: [Genetic Curve Fitter](/system/genetic-regression-curve.html)
-* Source Code: [https://github.com/subprotocol/genetic-js](https://github.com/subprotocol/genetic-js)
+
+#### Examples
+
+* [Genetic Phrase Solver](http://subprotocol.com/system/genetic-hello-world.html)
+* [Genetic Curve Fitter](http://subprotocol.com/system/genetic-regression-curve.html)
+
+
+#### Install
+
+```bash
+npm install genetic-js
+```
+
 
 ## Population Functions
 
@@ -125,5 +135,4 @@ git clone git@github.com:subprotocol/genetic-js.git && make distcheck
 ## Contributing
 
 Feel free to open issues and send pull-requests.
-
 
