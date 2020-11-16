@@ -19,7 +19,7 @@ From a plot of vertices, this genetic algorithm optimizes a continious function 
 
 Given the population parameters below, the simulation will run and interpolate color, transparency, and line-thickness to show how solutions evolve over time.  The best-fit solutions are narrow and red. The least fit are large, purple, and semi-transparent.
 
-<div style="position: absolute; width: 300px; margin-left: 475px;">
+<div style="position: absolute; width: 500px; margin-left: 520px;">
 	Generation: <span id="generation"></span>
 	<br/>Error (Avg): <span id="avgbestfit"></span>
 	<br/>Error (Stdev): <span id="errorstdev"></span>

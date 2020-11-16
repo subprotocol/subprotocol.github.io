@@ -8,36 +8,23 @@ title: Welcome
 	{% for page in paginator.posts %}
 
 		{% capture counter %}{{ counter | plus:1 }}{% endcapture %}
-		{% if counter == "4" %}
-		<span class="post-preview text">
-			<div id="bsa">
-				<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-				<!-- Subprotocol -->
-				<ins class="adsbygoogle"
-				     style="display:inline-block;width:250px;height:250px"
-				     data-ad-client="ca-pub-6482050434601272"
-				     data-ad-slot="4629921653"></ins>
-				<script>
-				(adsbygoogle = window.adsbygoogle || []).push({});
-				</script>
-			</div>
-		</span>
-		{% endif %}
 			
 		<a class="post-preview text" href="{{ page.url }}">
 			<div class="pad">
 
-			<h1>{{ page.title }}</h1>
+			
 			
 			{% if page.image %}
 				<div class="img-container">
 					<img src="{{ page.image }}" />
 				</div>
 			{% endif %}
+
+			<h1>{{ page.title }}</h1>
 			
 			<p>{{ page.synopsis }}</p>
 			
-			<span class="btn">View</span>
+			<span class="btn">View <i class="fa fa-angle-right"></i></span>
 			</div>
 		</a>
 	{% endfor %}

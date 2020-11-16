@@ -4,27 +4,14 @@
 
 
 body {
-	/*background: rgb(241, 244, 249);*/
 	background: #fff;
 	margin: 0px;
-	font-family: 'Open Sans', sans-serif;
-	/*font-family: 'Josefin Slab', serif;*/
-	
-	
-	background: #f2f2f2;
-	background: -moz-linear-gradient(left,  #f2f2f2 0%, #ffffff 8%, #ffffff 8%, #ffffff 92%, #f2f2f2 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#f2f2f2), color-stop(8%,#ffffff), color-stop(8%,#ffffff), color-stop(92%,#ffffff), color-stop(100%,#f2f2f2));
-	background: -webkit-linear-gradient(left,  #f2f2f2 0%,#ffffff 8%,#ffffff 8%,#ffffff 92%,#f2f2f2 100%);
-	background: -o-linear-gradient(left,  #f2f2f2 0%,#ffffff 8%,#ffffff 8%,#ffffff 92%,#f2f2f2 100%);
-	background: -ms-linear-gradient(left,  #f2f2f2 0%,#ffffff 8%,#ffffff 8%,#ffffff 92%,#f2f2f2 100%);
-	background: linear-gradient(to right,  #f2f2f2 0%,#ffffff 8%,#ffffff 8%,#ffffff 92%,#f2f2f2 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f2f2f2', endColorstr='#f2f2f2',GradientType=1 );
-	
+	font-family: 'Roboto', sans-serif;	
 }
 
 
 .logo {
-	font-family: 'Josefin Slab', serif;
+	font-weight: 300;
 	text-decoration: none;
 	font-size: 20pt;
 	display: block;
@@ -36,19 +23,18 @@ body {
 	color: #aaa;
 }
 
+.container {
+	margin: 0 auto;
+	width: 1024px;
+}
+
 #header {
 	padding: 10px;
 	color: #aaa;
 	background: #222;
-	
 	background: #161616;
-	background: -moz-linear-gradient(left,  #161616 0%, #3f3f3f 100%);
-	background: -webkit-gradient(linear, left top, right top, color-stop(0%,#161616), color-stop(100%,#3f3f3f));
-	background: -webkit-linear-gradient(left,  #161616 0%,#3f3f3f 100%);
-	background: -o-linear-gradient(left,  #161616 0%,#3f3f3f 100%);
-	background: -ms-linear-gradient(left,  #161616 0%,#3f3f3f 100%);
 	background: linear-gradient(to right,  #161616 0%,#3f3f3f 100%);
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#161616', endColorstr='#3f3f3f',GradientType=1 );
+	font-weight: 300;
 	
 }
 #header p {
@@ -61,9 +47,12 @@ body {
 }
 
 .right {
+	font-size: 1.05em;
 	float: right;
+	margin-top: 0.4em;
 	margin-right: 10px;
 }
+
 
 #header a {
 	color: #ddd;
@@ -74,72 +63,71 @@ body {
 	color: #fff;
 }
 
-
-
-
-/* clearfix */
-.post-listing:after {
-	content: ' ';
-	display: block;
-	clear: both;
+#header .right {
+	margin-top: 0.9em;
 }
+
+#header .right a {
+	display: inline;
+	padding: 5px 10px;
+}
+
+.home-btn {
+	
+	border-radius: 3px;
+	
+	margin-left: 20px;
+	display: inline-block;
+	
+	color: #fff !important;
+	box-shadow: inset 0px 0px 0px 2px rgba(255,255,255,0.4);
+}
+
+.home-btn:hover { 
+	box-shadow: inset 0px 0px 0px 2px rgba(255,255,255,1);
+}
+
+
+.post-listing {
+	margin: 3em 0;
+	display: grid;
+    grid-gap: 3em;
+	grid-template-columns: 1fr 1fr;
+	font-size: 1.2em;
+	font-weight: 300;
+}
+
+button {
+	background: #000;
+	color: #fff;
+	padding: 0.5em 1.0em;
+	border: none;
+	font-size: 0.8em;
+	border-radius: 6px;
+	cursor: pointer;
+}
+
+button:hover {
+	background: #26ae90;
+}
+
+button:focus {
+	outline:0;
+}
+
+
 
 .post-preview {
-	display: block;
-	margin: 0px;
-	padding: 0px;
-	width: 25%;
-	float: left;
-	overflow: hidden;
-	min-height: 300px;
-	box-shadow: inset 4px 0px rgba(60,60,60,0.05);
-}
-
-
-@media screen and (max-width: 2400px) {
-	.post-preview { width: 12.49%; }
-}
-
-@media screen and (max-width: 2000px) {
-	.post-preview { width: 14.26%; }
-}
-
-@media screen and (max-width: 1700px) {
-	.post-preview { width: 19.99%; }
-}
-
-@media screen and (max-width: 1300px) {
-	.post-preview { width: 24.99%; }
-}
-
-@media screen and (max-width: 1100px) {
-	.post-preview { width: 33.33%; }
-}
-
-@media screen and (max-width: 800px) {
-	.post-preview { width: 50%; }
-}
-
-
-@media screen and (max-width: 500px) {
-	.post-preview { width: 100%; }
-}
-
-
-
-a.post-preview {
 	color: #444;
 	text-decoration: none;
 }
 
 .post-preview h1 {
-	font-size: 20pt;
-	text-underline: none;
-	line-height: 18pt;
+	font-weight: 400;
+	text-decoration: none;
 	margin: 0px;
 	padding: 0px;
-	padding: 10px 0px 0px 0px;
-	min-height: 55px;
+	font-size: 1.2em;
 }
 
 .post-preview:hover h1 {
@@ -149,28 +137,25 @@ a.post-preview {
 
 .post-preview p {
 	margin: 0px;
-	padding: 10px 0px 0px 0px;
-	text-underline: none;
+	padding: 0.5em 0;
+	text-decoration: none;
 	color: #777;
 }
 
-.post-preview.text {
-	-webkit-font-smoothing: antialiased;
-	font-size: 10pt;
-}
 
 .post-preview .pad {
 	margin-top: 5px;
-	padding: 0px 20px;
+	padding: 0px 0px;
 }
 
 
 
 .img-container {
 	width: 100%;
-	height: 60px;
+	height: 128px;
 	overflow: hidden;
-	margin: 5px 0px 5px 0px;
+	margin: 1em 0;
+	border-radius: 10px;
 	
 }
 
@@ -179,8 +164,9 @@ a.post-preview {
 	display: block;
 	z-index: 100;
 	width: 100%;
-	height: 60px;
-	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.2);
+	height: 128px;
+	box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.2), inset 0px 0px 0px 1px rgba(0,0,0,0.04);
+	border-radius: 10px;
 	z-index: 20;
 	position: relative;
 }
@@ -188,7 +174,7 @@ a.post-preview {
 .post-preview .pad .img-container img {
 	z-index: 10;
 	position: relative;
-	top: -60px;
+	top: -128px;
 	width: 100%;
 	height: auto;
 	
@@ -216,7 +202,7 @@ a.post-preview {
 	color: #777;
 	padding: 6px 12px;
 	border: 3px solid #ccc;
-	font-weight: bold;
+	font-weight: 400;
 	border-radius: 5px;
 }
 
@@ -225,26 +211,17 @@ a.post-preview {
 	color: #333;
 }
 
-
-.home-btn {
-	padding: 5px 10px;
-	border-radius: 3px;
-	margin-top: 7px;
-	margin-left: 20px;
-	display: inline-block;
-	
-	color: #fff !important;
-	box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,0.4);
+.btn i {
+	margin-left: 0.3em;
 }
 
-.home-btn:hover { 
-	box-shadow: inset 0px 0px 0px 3px rgba(255,255,255,1);
-}
 
 
 article {
 	color: #333;
 	overflow: hidden;
+	font-weight: 300;
+	font-size: 1.5em;
 }
 
 
@@ -258,7 +235,6 @@ article section {
 	display: block;
 	min-height: 200px;
 	color: #5a5c5e;
-	width: 800px;
 	margin: 0px auto 0px auto;
 }
 
@@ -276,9 +252,17 @@ article section p {
 
 
 article section h1, article section h2 {
-	font-weight: 700;
+	font-weight: 900;
 	color: #000;
+}
+
+h1 {
 	margin-top: 50px;
+}
+h2 {
+	margin-top: 3em;
+	margin-bottom: -0.5em;
+	clear: both;
 }
 
 article section h1 {
@@ -298,10 +282,6 @@ h4 {
 	text-transform: uppercase;
 }
 
-h4 + .highlight {
-	margin-top: -80px !important;
-	padding-top: 80px !important;
-}
 
 
 
@@ -317,6 +297,7 @@ table tr {
 	background-color: white;
 	margin: 0;
 	padding: 0;
+	font-size: 0.8em;
 }
 table tr:nth-child(2n) {
 	background-color: #f8f8f8;
@@ -407,52 +388,53 @@ article section hr {
 	border-bottom: 1px solid #dcddde;
 }
 
+figure {
+	margin: 0;
+	padding: 0;
+}
 article section pre {
+	margin: 0;
+	padding: 0em;
 	font-family: Courier, "Courier New" !important;
 	font-size: 10pt;
 	line-height: 1em;
 	color: #000;
-	background: rgba(228,230,232,0.2);
-	padding: 10px;
-	box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.025);
+
+	
+	
 }
 
 article section .highlight pre {
 	line-height: 1.2em;
 	background: none;
-	padding: 0px;
 }
 
 article section .highlight {
 	font-family: Courier, "Courier New" !important;
 	font-size: 10pt;	
-	
-	/* yes, this is trickery */
-	margin: 60px -1000px 0px -1000px;
-		
+
 	background: rgba(121,159,190,0.1);
-	padding: 50px 0px;
+	box-shadow: inset -6px 0px 0px 0px rgba(0,0,0,0.025);
+	padding: 1em;
+
+	border-radius: 8px;
+	border: 1px solid rgba(0,0,0,0.1);
+	
+		
+	
 	color: #555;
 	text-shadow: 1px 1px 0px rgba(255,255,255,0.75);
 	
-	box-shadow:
-		0px -1px 0px 0px rgba(255,255,255,0.4)
-		, 0px 0px 20px 10px rgba(255,255,255,0.75)
-		, inset 0px 3px 20px 3px rgba(0,0,0,0.15)
-		, 0px -5px 10px 0px rgba(157,174,191,0.5)
-		;
+	
 }
 
 article section .highlight pre {
-	width: 800px;
-	margin: 0px auto 0px auto;
+
 	word-wrap: break-word;
 }
 
 #article-nav {
-	padding: 4px 8px;
-	margin: 10px auto 0px auto;
-	width: 800px;
+	margin: 2em auto 0px auto;
 	text-transform: uppercase;
 }
 
@@ -481,10 +463,10 @@ article section .highlight pre {
 	clear: both;
 }
 
-/*p > code {
-	padding: 4px 2px;
-	background: rgba(0,0,0,0.05);
-}*/
+
+.highlight {
+	margin: 2em 0;
+}
 
 .highlight pre p {
 	margin: 0px !important;
@@ -493,17 +475,11 @@ article section .highlight pre {
 
 
 
-.post-preview #bsa {
-	margin-top: 15px;
-	padding-left: 4%;
-}
-
 
 #footer {
 	font-size: 10pt;
 	background: rgba(121,129,140,0.2);
-	
-	
+	margin-top: 3em;
 	padding: 50px 50px;
 	color: #969ba3;
 	text-shadow: 1px 1px 0px rgba(255,255,255,0.5);
@@ -531,3 +507,8 @@ article section .highlight pre {
 }
 
 
+.screenshot {
+	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2), 0px 0px 0px 1px rgba(0,0,0,0.1);
+	border-radius: 6px;
+	margin: 1em;
+}

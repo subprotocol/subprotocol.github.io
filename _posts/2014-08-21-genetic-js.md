@@ -25,9 +25,9 @@ Have fun optimizing all your optimizations!
 
 #### Install
 
-```bash
+{% highlight bash %}
 npm install genetic-js
-```
+{% endhighlight %}
 
 
 ## Population Functions
@@ -89,7 +89,7 @@ An algorithm can be either genetic or evolutionary depending on which selection 
 | Genetic.Select2.FittestRandom    | Pairs the most fit individual with random individuals
 
 
-```javascript
+{% highlight javascript linenos %}
 var genetic = Genetic.create();
 
 // more likely allows the most fit individuals to survive between generations
@@ -99,7 +99,7 @@ genetic.select1 = Genetic.Select1.RandomLinearRank;
 genetic.select2 = Genetic.Select2.FittestRandom;
 
 // ...
-```
+{% endhighlight %}
 
 ## Configuration Parameters
 
@@ -119,9 +119,9 @@ genetic.select2 = Genetic.Select2.FittestRandom;
 
 To clone, build, and test Genetic.js issue the following command:
 
-```bash
+{% highlight bash linenos %}
 git clone git@github.com:subprotocol/genetic-js.git && make distcheck
-```
+{% endhighlight %}
 
 | Command               | Description
 | --------------------- | -----------
