@@ -48,7 +48,9 @@ Canonical 'Hello world!'
 
 All it takes is an HTML5 canvas, a VerletJS object, and you can be well on your way to creating your very own monstrosity. If the simulation is slow for your computer, lower the steps per frame from 16 to something smaller (like 8):
 
-    sim.frame(16);
+{% highlight javascript %}
+sim.frame(16);
+{% endhighlight %}
 
 See the [Shapes example](/system/verlet-hello-world.html) for full source code.
 
