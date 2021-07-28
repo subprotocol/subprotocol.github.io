@@ -4,7 +4,11 @@
 	<title>{{ page.title }} - Subprotocol</title>
 	<meta name="author" content="Sub Protocol" />
 	<meta charset="UTF-8" />
+	{% if page.layout == "post" %}
+	<meta name="viewport" content="width=1024" />
+	{% else %}
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	{% endif %}
 	<link rel="stylesheet" type="text/css" href="/css/style.css" />
 	<link rel="stylesheet" type="text/css" href="/css/pygments/friendly.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap" rel="stylesheet" />
@@ -24,7 +28,7 @@
 
 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
-<body>
+<body class="layout-{{ page.layout }}">
 	<a name="top"></a>
 	<div id="header">
 		<div class="container">
@@ -68,7 +72,7 @@
 			</div>
 			{% endif %}
 		
-			<br/><br/>Copyright &copy; Sub Protocol 2020.
+			<br/><br/>Copyright &copy; Sub Protocol 2021.
 		</div>
 	</div>
 </body>

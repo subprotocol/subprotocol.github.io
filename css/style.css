@@ -1,8 +1,5 @@
 
 
-
-
-
 body {
 	background: #fff;
 	margin: 0px;
@@ -24,19 +21,20 @@ body {
 }
 
 .container {
+	padding: 0 1em;
 	margin: 0 auto;
-	width: 1024px;
+	max-width: 1024px;
 }
 
 #header {
-	padding: 10px;
+	padding: 10px 0;
 	color: #aaa;
 	background: #222;
 	background: #161616;
 	background: linear-gradient(to right,  #161616 0%,#3f3f3f 100%);
 	font-weight: 300;
-	
 }
+
 #header p {
 	margin: 0px;
 	padding: 0px;
@@ -96,6 +94,14 @@ body {
 	font-size: 1.2em;
 	font-weight: 300;
 }
+
+@media only screen and (max-width: 600px) {
+	.post-listing {
+		grid-template-columns: 1fr;
+	}
+}
+
+
 
 button {
 	background: #000;
