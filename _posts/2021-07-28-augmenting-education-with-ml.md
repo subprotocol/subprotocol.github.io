@@ -61,7 +61,7 @@ Reversing characters (e.g. bd, pq) is a very common struggle for children learni
 **Instructions:** This demo expects you to write a letter (a-Z) in the box matching the letter goal. Press the 'Clear' button and try writing something.  Use the 'Change Letter' button for a different letter goal. A few examples are provided in the drop down.
 
 <div style="display: inline-block; vertical-align: top; margin-right: 1em;">
-	Letter Goal: <b id='letter'>b</b>
+	Letter Goal: <b id='letter'>e</b>
 	
 	<br/><br/>
 	
