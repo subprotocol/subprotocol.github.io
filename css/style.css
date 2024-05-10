@@ -504,15 +504,6 @@ article section .highlight pre {
 }
 
 
-#disqus_thread {
-	color: #f00;
-}
-
-#disqus_thread a {
-	color: #26ae90 !important;
-}
-
-
 .screenshot {
 	box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.2), 0px 0px 0px 1px rgba(0,0,0,0.1);
 	border-radius: 6px;

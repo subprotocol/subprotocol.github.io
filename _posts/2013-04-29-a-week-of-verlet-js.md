@@ -6,7 +6,6 @@ title: A week of Verlet-JS
 synopsis: "The little (physics) engine that could."
 comments: true
 image: /images/verlet-1week.png
-disqus_url: http://subprotocol.com/2013/04/29/a-week-of-verlet-js.html
 ---
 
 It has been an amazing (*crazy!*) week since [releasing verlet-js](/system/introducing-verlet-js.html) to the world. The tiny library&mdash;which really just lets you link particles together&mdash;seems to have deeply struck a chord with people.  

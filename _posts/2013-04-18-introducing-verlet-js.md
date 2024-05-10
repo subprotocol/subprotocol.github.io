@@ -6,7 +6,6 @@ title: Introducing Verlet-JS
 synopsis: An open source physics engine made for constructing 2D dynamic body simulations.
 comments: true
 image: /images/verlet-code.png
-disqus_url: http://subprotocol.com/2013/04/18/introducing-verlet-js.html
 redirect_from: "/verlet-js/"
 ---
 

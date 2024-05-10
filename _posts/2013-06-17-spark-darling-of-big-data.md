@@ -7,7 +7,6 @@ synopsis: "Introduction to Spark, a powerful and fast real-time map/reduce frame
 comments: true
 image: /images/spark.png
 redirect_from: "/2013/06/17/spark-darling-of-big-data.html"
-disqus_url: http://subprotocol.com/2013/06/17/spark-darling-of-big-data.html
 ---
 
 
