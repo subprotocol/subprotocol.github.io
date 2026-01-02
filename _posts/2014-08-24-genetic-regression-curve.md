@@ -128,7 +128,7 @@ Given the population parameters below, the simulation will run and interpolate c
 
 
 
-<canvas id="scratch" style="width: 800px; height: 500px; cursor: crosshair;"></canvas>
+<canvas id="scratch" style="width: 800px; height: 500px; cursor: crosshair;" data-click-type="javascript"></canvas>
 
 <script>
 

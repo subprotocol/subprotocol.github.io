@@ -87,7 +87,7 @@ Reversing characters (e.g. bd, pq) is a very common struggle for children learni
 	</select>
 </div>
 
-<canvas id="receptive_field" style="cursor: pointer; user-select: none; display: inline-block; vertical-align: top; margin-right: 1em; border: 3px solid #ccc; border-radius: 5px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1); width: 384px; height: 384px; image-rendering: pixelated;"></canvas>
+<canvas id="receptive_field" style="cursor: pointer; user-select: none; display: inline-block; vertical-align: top; margin-right: 1em; border: 3px solid #ccc; border-radius: 5px; box-shadow: 3px 3px 10px rgba(0,0,0,0.1); width: 384px; height: 384px; image-rendering: pixelated;" data-click-type="javascript"></canvas>
 
 <div style="display: inline-block; vertical-align: top;">
 	Correctness Tolerance

@@ -15,7 +15,7 @@ redirect_from: "/verlet-js/examples/shapes.html"
 
 This is the <i>hello world</i> of Verlet-JS. Simple shapes generated using VerletJS.prototype.tire(origin, radius, segments, spokeStiffness, treadStiffness). Also demonstrating various constraint stiffness coefficients. All objects are draggable.
 
-<canvas id="scratch" style="width: 800px; height: 500px;"></canvas>
+<canvas id="scratch" style="width: 800px; height: 500px;" data-click-type="javascript"></canvas>
 <script type="text/javascript">
 
 window.onload = function() {
